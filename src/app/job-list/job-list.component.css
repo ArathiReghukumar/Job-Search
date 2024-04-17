@@ -1,0 +1,48 @@
+
+.page-container {
+  background-color: #f0f0f0; /* Grey background color */
+  color: #000000; /* Black text color */
+  padding: 20px; 
+  margin-left: 100px;
+  margin-right:100px;
+}
+
+.page-title {
+  font-size: 24px; /* Adjust title font size */
+  font-weight: bold; /* Make title bold */
+  margin-bottom: 20px; /* Add space below the title */
+}
+.job-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: 250px;
+  height: 80px;
+  width: 1000px;
+}
+
+.logo-container {
+  /* margin-right: 10px; */
+  width: 50px; /* Adjust width of the logo container */
+  height: 50px;
+}
+
+.logo-container img {
+  width: 100%; /* Make the logo fill the container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.icon-star {
+  font-size: 20px; /* Adjust size of the icon */
+  color: grey; /* Default color */
+  cursor: pointer;
+}
+
+.icon-star.active {
+  color: gold; /* Active color */
+}
+
+.job-details {
+  flex: 1;
+  font-size: small;
+}

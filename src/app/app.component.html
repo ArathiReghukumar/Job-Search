@@ -1,0 +1,17 @@
+<div>
+  <h1>{{ title }}</h1>
+  <nav>
+    <ul>
+      <li><a (click)="navigateToJobs()">Jobs</a></li>
+      <li><a (click)="navigateToFavorites()">Favorites</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="job-list-container"> 
+      <router-outlet></router-outlet>
+    </div>
+    <div class="favorite-jobs-container">
+      <app-favorites *ngIf="isFavoritesPageActive()"></app-favorites>
+    </div>
+  </div>
+</div>

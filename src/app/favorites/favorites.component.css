@@ -1,0 +1,36 @@
+.job-container {
+    background-color: #f0f0f0; /* Grey background color */
+    color: #000000; /* Black text color */
+    padding: 5px;
+    margin-bottom: 20px;
+    margin-left: 400px;
+    margin-right: 400px;
+    /* align-self: center; */
+    display: flex;
+}
+
+.logo-container {
+    /* margin-right: 10px; */
+margin-top: 10px;
+width: 50px; /* Adjust the width of the logo container */
+height: 50px;
+}
+
+.logo-container img {
+width: 100%; /* Make the logo fill the container */
+height: auto; /* Maintain aspect ratio */
+}
+  
+
+.job-details {
+overflow: hidden; /* Clear the float from logo-container */
+text: 7px;
+font-size: small;
+}
+
+.job-title {
+font-size: 10px;
+font-weight: bold;
+margin-bottom: 5px;
+}
+  

@@ -1,0 +1,16 @@
+<ng-container *ngIf="favoriteJobs$ | async as favoriteJobs">
+  <div *ngIf="favoriteJobs.length > 0; else noFavorites">
+    <div class="job-container" *ngFor="let job of favoriteJobs">
+      <div class="logo-container">
+        <img [src]="job.companyLogo" alt="{{ job.companyName }} Logo">
+      </div>
+      <div class="job-details">
+        <h2>{{ job.title }}</h2>
+        <p>Company: {{ job.companyName }} | Reference: {{ job.reference }}</p>
+      </div>
+    </div>
+  </div>
+  <ng-template #noFavorites>
+    <p>No favorite jobs selected.</p>
+  </ng-template>
+</ng-container>

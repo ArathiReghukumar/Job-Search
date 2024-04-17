@@ -1,0 +1,49 @@
+.job-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the start of the container */
+    align-items: flex-start; /* Align content to the start of the container */
+    width: 100%; /* container fills the available width */
+    padding: 20px; /* padding to the container */
+    box-sizing: border-box; /* padding and border in the element's total width and height */
+}
+  
+.job-details .button-container {
+width: 100%; /* button container fills the available width */
+margin-bottom: 20px; /* Add space below the button */
+}
+
+.job-details button {
+align-self: flex-start; /* Align the button to the start of the container */
+}
+
+.job-details .logo-container {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+}
+
+.job-details .logo-container img {
+width: 50px; /* Adjust size of company logo */
+height: auto;
+margin-right: 10px;
+}
+
+.job-details h2,
+.job-details p {
+margin: 0;
+width: 100%; /* fill container width */
+text-align: left; /* Align text to the left */
+}
+
+.job-details .description-container {
+width: 100%; /* job description fills the container width */
+margin-bottom: 20px; /* Add space below description */
+text-align: left; /* Align text to left */
+}
+
+.job-details .description-container p {
+margin: 0;
+text-align: left; /* Align text to left */
+}
+

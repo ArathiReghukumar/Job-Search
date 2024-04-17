@@ -1,0 +1,17 @@
+
+<ng-container *ngFor="let job of jobs">
+  <div class="job-container">
+    <div class="logo-container">
+      <img [src]="job.companyLogo" alt="{{ job.companyName }} Logo">
+    </div>
+    <div class="job-details">
+      <h2><a [routerLink]="['/jobs', job.id]">{{ job.title }}</a></h2>
+      <p>Company: {{ job.companyName }} | Reference: {{ job.reference }}</p>
+    </div>
+    <div class="icon-container">
+      <span class="icon-star" [attr.id]="'star-' + job.id" [class.active]="isFavorite(job)" (click)="toggleFavorite(job)"></span>
+    </div>
+  </div>
+</ng-container>
+  
+  

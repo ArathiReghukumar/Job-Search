@@ -1,0 +1,47 @@
+nav {
+  background-color: #f0f0f0;
+  overflow: hidden;
+  color: #000; 
+  align: center;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  color: #000;
+}
+
+nav ul li {
+  float: left;
+  align: center;
+  margin-left:100px;
+  /* margin-right: 100px;; */
+}
+
+nav ul li a {
+  display: block;
+  color: grey;
+  /* background-color: #f0f0f0; */
+  text-align: center;
+  /* padding: 14px 16px; */
+  text-decoration: none;
+}
+
+nav ul li a.active {
+  font-weight: bold;
+  color: black;
+  background-color: grey; 
+}
+
+.active {
+  background-color: #4CAF50;
+}
+.job-list-container {
+  text-align: center; /* Center-align the job list */
+}
+h1{
+  align: center;
+  text-align:center;
+}
